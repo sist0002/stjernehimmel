@@ -29,15 +29,106 @@
       <h1>INDBERET</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>Find dine nærmeste</h2>
+          <p>Brug denne form til at sende en efterspørgsel ud efter dine relationer fra jorden.</p>
         </article>
-        <form id="webform"></form>
+        <form id="webform">
+          <div class="form-grid">
+            <fieldset class="form-group">
+              <legend>Dine oplysninger</legend>
+              <div>
+                <label for="f-name">Fornavn</label>
+                <input id="f-name" name="f-name" type="text" />
+              </div>
+              <div>
+                <label for="l-name">Efternavn</label>
+                <input id="l-name" type="text" />
+              </div>
+              <div>
+                <label for="birthday">Fødselsdag</label>
+                <input id="birthday" type="date" />
+              </div>
+              <div>
+                <label for="kapselnummer">Kapselnummer</label>
+                <aside class="kommentar">Består af 6 cifre fx 232300</aside>
+                <input id="kapselnummer" type="text" />
+              </div>
+            </fieldset>
+            <fieldset class="form-group">
+              <legend>Dit hjem på jorden</legend>
+              <div>
+                <label for="country">Land</label>
+                <input id="country" type="text" />
+              </div>
+              <div>
+                <label for="city">By</label>
+                <input id="city" type="text" />
+              </div>
+            </fieldset>
+            <fieldset class="form-group">
+              <legend>Hvem leder du efter?</legend>
+              <div>
+                <label for="people"></label>
+                <aside class="kommentar">Navne opdeles med komma (,) fx: Emma Larsen, Sarah Jensen</aside>
+                <textarea name="people" id="people"></textarea>
+              </div>
+            </fieldset>
+            <fieldset class="form-group">
+              <legend>Kontakt mig</legend>
+              <p>Kontakt mig via</p>
+              <div>
+                <div>
+                  <input id="radio-kontakt" type="radio" name="radioContact" />
+                  <label for="radio-kontakt">Radio</label>
+                </div>
+                <div>
+                  <input id="morse-kontakt" type="radio" name="radioContact" />
+                  <label for="morse-kontakt">Morsekode</label>
+                </div>
+                <div>
+                  <input id="screen-kontakt" type="radio" name="radioContact" />
+                  <label for="screen-kontakt">Skærm</label>
+                </div>
+              </div>
+              <div>
+                <p>Kontakt mig hvis der bliver fundet...</p>
+                <div>
+                  <input id="same-adress" type="checkbox" />
+                  <label for="same-adress">en person med lignende jordlige adresse</label>
+                </div>
+                <div>
+                  <input id="same-l-name" type="checkbox" />
+                  <label for="same-l-name">en person med samme efternavn</label>
+                </div>
+              </div>
+            </fieldset>
+            <button id="submit_bbtn" type="button">Indsend</button>
+          </div>
+        </form>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
+        <article id="sum">
+          <div>
+            <h3>Fornavn</h3>
+            <p id="sumFname"></p>
+          </div>
+          <div>
+            <h3>Efternavn</h3>
+            <p id="sumLname"></p>
+          </div>
+          <div>
+            <h3>Fødselsdag</h3>
+            <p id="sumBirthday"></p>
+          </div>
+          <div>
+            <h3>Kapselnummer</h3>
+            <p id="sumCapsule"></p>
+          </div>
+          <div>
+            <h3>Kontakt mig via</h3>
+            <p id="sumContact"></p>
+          </div>
         </article>
       </section>
     </main>
@@ -67,6 +158,6 @@
         </ul>
       </nav>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>
