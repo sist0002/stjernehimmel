@@ -1,5 +1,6 @@
 #webform {
   background-color: var(--form-background-color);
+  padding: 2em;
 }
 
 #form-section,
@@ -29,4 +30,23 @@
   line-height: 1.3;
   margin: 0 0 1.2rem 0;
   padding: 0;
+}
+#form-info {
+  text-align: center;
+}
+.form-group {
+  padding: 1em;
+  background-color: #beb997;
+  border: none;
+  line-height: 2em;
+  legend {
+    font-family: "rubik_medium";
+  }
+  label {
+    font-family: "rubik_light";
+  }
+  .kommentar {
+    font-family: "rubik_light";
+    font-size: 12px;
+  }
 }
