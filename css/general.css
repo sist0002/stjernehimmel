@@ -138,3 +138,33 @@ footer a {
 .green {
   background-color: var(--info-bg-color-green);
 }
+/* FONTS */
+h1,
+h2,
+h3 {
+  font-family: "rubik_bold";
+}
+h1,
+h2 {
+  text-transform: uppercase;
+}
+p {
+  font-family: "rubik_regular";
+}
+
+@font-face {
+  font-family: "rubik_regular";
+  src: url(../fonts/Rubik-Regular.ttf);
+}
+@font-face {
+  font-family: "rubik_light";
+  src: url(../fonts/Rubik-Light.ttf);
+}
+@font-face {
+  font-family: "rubik_medium";
+  src: url(../fonts/Rubik-Medium.ttf);
+}
+@font-face {
+  font-family: "rubik_bold";
+  src: url(../fonts/Rubik-Bold.ttf);
+}
