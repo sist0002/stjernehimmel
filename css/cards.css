@@ -70,10 +70,10 @@
   border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
-.news_card .cta_btn {
+.news_card .read-more {
   justify-self: center;
 }
-.cta_btn {
+.read-more {
   display: inline-block;
   padding: 0.3rem 0.5rem;
   border: 1px solid var(--border-color);
@@ -84,7 +84,18 @@
   text-decoration: none;
   width: max-content;
 }
-.cta_btn:after {
+.read-more:after {
   content: "\2192";
   margin-left: 0.5rem;
+}
+.close-dialog {
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--followup-text-bg-color);
+  color: var(--followup-text-color);
+  text-align: center;
+  text-decoration: none;
+  width: max-content;
 }

@@ -29,7 +29,10 @@ footer nav {
   align-items: center;
 }
 header nav > * {
-  flex: 1;
+  flex: 2;
+}
+header nav {
+  background-color: #1c1b20;
 }
 nav ul {
   display: flex;
@@ -51,7 +54,7 @@ footer ul {
 }
 #daily {
   grid-template-rows: repeat(2, minmax(200px, min-content));
-  gap: 1rem;
+  gap: 4rem;
 }
 #breaking {
   grid-template-rows: repeat(auto-fit, minmax(50px, min-content));

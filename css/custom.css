@@ -18,7 +18,7 @@
   /* Borders */
   --border-color: #341149; /* used */
   --border-color-light: #f7f5c2; /* used */
-  --border-radius: 0.25rem;
+  --border-radius: 1rem;
 
   /* Links */
   --link-color: #84888e; /* used */
@@ -66,7 +66,7 @@
   --info-background-color: #e9e2b6;
   --headline-bg-color: #d02f2d;
   --headline-bg-color-alert: #d02f2d;
-  --headline-bg-color-inverted: #1c1b20;
+  --headline-bg-color-inverted: #d02f2d;
   --bodytext-bg-color: #dbdde3;
   --bodytext-bg-color-inverted: #dbdde3;
   --cta-text-bg-color: #ffa680;
