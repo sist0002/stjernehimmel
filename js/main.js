@@ -1,23 +1,24 @@
-document.querySelector("#circle").addEventListener("mouseover", headHighlight);
-document.querySelector("#circle").addEventListener("mouseout", headUnHighlight);
-document.querySelector("#circle").addEventListener("click", headInfo);
+document.querySelector("#_moon_").addEventListener("mouseover", headHighlight);
+document.querySelector("#_moon_").addEventListener("mouseout", headUnHighlight);
+document.querySelector("#_moon_").addEventListener("click", headInfo);
 
-document.querySelector("#circle2").addEventListener("mouseover", headHighlight2);
-document.querySelector("#circle2").addEventListener("mouseout", headUnHighlight2);
-document.querySelector("#circle2").addEventListener("click", headInfo2);
+document.querySelector("#_hastighed_").addEventListener("mouseover", headHighlight2);
+document.querySelector("#_hastighed_").addEventListener("mouseout", headUnHighlight2);
+document.querySelector("#_hastighed_").addEventListener("click", headInfo2);
 
-document.querySelector("#circle3").addEventListener("mouseover", headHighlight3);
-document.querySelector("#circle3").addEventListener("mouseout", headUnHighlight3);
-document.querySelector("#circle3").addEventListener("click", headInfo3);
+document.querySelector("#_radar_").addEventListener("mouseover", headHighlight3);
+document.querySelector("#_radar_").addEventListener("mouseout", headUnHighlight3);
+document.querySelector("#_radar_").addEventListener("click", headInfo3);
 
 function headHighlight() {
     console.log("headHighlight");
-    document.querySelector("#circle").style.fill = " #FFFFFF";
+    document.querySelector("#moon_bg #moon_crater").style.fill = " #FFFFFF";
 }
 
 function headUnHighlight() {
     console.log("headUnHighlight");
-    document.querySelector("#circle").style.fill = " #d02f2d";
+    document.querySelector("#moon_bg").style.fill = " #d02f2d";
+    document.querySelector("#moon_crater").style.fill = " #d02f2d";
 }
 
 function headInfo() {
@@ -28,12 +29,12 @@ function headInfo() {
 
 function headHighlight2() {
     console.log("headHighlight2");
-    document.querySelector("#circle2").style.fill = " #FFFFFF";
+    document.querySelector("#_hastighed_").style.fill = " #FFFFFF";
 }
 
 function headUnHighlight2() {
     console.log("headUnHighlight2");
-    document.querySelector("#circle2").style.fill = " #d02f2d";
+    document.querySelector("#_hastighed_").style.fill = " #d02f2d";
 }
 
 function headInfo2() {
@@ -44,12 +45,12 @@ function headInfo2() {
 
 function headHighlight3() {
     console.log("headHighlight3");
-    document.querySelector("#circle3").style.fill = " #FFFFFF";
+    document.querySelector("#_radar_").style.fill = " #FFFFFF";
 }
 
 function headUnHighlight3() {
     console.log("headUnHighlight3");
-    document.querySelector("#circle3").style.fill = " #d02f2d";
+    document.querySelector("#_radar_").style.fill = " #d02f2d";
 }
 
 function headInfo3() {
@@ -57,26 +58,3 @@ function headInfo3() {
     document.querySelector(".info-text > h2").textContent = "radar";
     document.querySelector(".info-text > article > p").textContent = "hvor er du?";
 }
-
-
-
-// document.querySelector("#circle").addEventListener("mouseover", headHighlight);
-// document.querySelector("#circle").addEventListener("mouseout", headUnHighlight);
-// document.querySelector("#circle").addEventListener("click", headInfo);
-
-// document.querySelector("#circle2").addEventListener("mouseover", headHighlight);
-// document.querySelector("#circle2").addEventListener("mouseout", headUnHighlight);
-// document.querySelector("#circle2").addEventListener("click", headInfo);
-
-// document.querySelector("#circle3").addEventListener("mouseover", headHighlight);
-// document.querySelector("#circle3").addEventListener("mouseout", headUnHighlight);
-// document.querySelector("#circle3").addEventListener("click", headInfo);
-
-// function headHighlight() {
-//     console.log(this.id);
-//     this.style.fill = " #FFFFFF";
-// }
-// function headUnHighlight() {
-//     console.log(this);
-//     this.style.fill = " #A44935";
-// }
