@@ -97,3 +97,21 @@ function startPanorama() {
 function stopPanorama() {
     this.classList.add("stop");
 }
+
+// DARK MODE
+const css = document.querySelector(".lightmode");
+console.log(css.href);
+
+const darkbtn = document.querySelector(".switchBtn");
+darkbtn.addEventListener("click", changeMode);
+// const switchtext = document.querySelector("#switchtext");
+
+function changeMode() {
+    if (css.href.includes("css/dark.css")){
+        css.href = "css/custom.css";
+        // switchtext.textContent = "Dark Mode";
+    } else {
+        css.href = "css/dark.css";
+        // switchtext.textContent = "Light Mode";
+    }
+}
