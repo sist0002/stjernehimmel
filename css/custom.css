@@ -44,8 +44,8 @@
   --form-submit-size: 1rem;
 
   /* Text colors */
-  --logotype-color: #ffffff;
-  --headline-color: #bbc3ca;
+  --logotype-color: #000000;
+  --headline-color: #000000;
   --headline-color-inverted: #f9fcfe;
   --bodytext-color: #575c61;
   --bodytext-color-inverted: #f9fcfe;
