@@ -20,13 +20,14 @@ function headUnHighlight() {
     document.querySelector("#moon_bg").style.fill = " #d02f2d";
     document.querySelector("#moon_crater").style.fill = " #d02f2d";
 }
-
 function headInfo() {
     console.log("headInfo");
     document.querySelector(".info-text > h2").textContent = "Månen";
-    document.querySelector(".info-text > article > p").innerHTML = "Du vil ofte kunne se månen ud af din kapsels vindue - her er hvad du skal vide om den. Der er <strong>små, farlige rumvæsener</strong> som har ofte kan se dig hvis du er <strong>max 20 km væk</strong>. De kan finde på at sende stråler ud, som kan være fatale. Derfor er det virkelig vigtigt at holde øje med din lokation, så du kan stye væk fra månen og ikke kommer for tæt på.";
+    document.querySelector(".info-text > article > p").innerHTML = "Du vil ofte kunne se månen ud af din kapsels vindue - her er hvad du skal vide om den.";
+    document.querySelector("#efficiency").innerHTML = "<h3>RUMVÆSENER</h3><P>Der er <strong>små, farlige rumvæsener</strong> som ofte kan se dig hvis du er <strong>max 20 km væk</strong>. De kan finde på at sende stråler ud, som kan være fatale. Derfor er det virkelig vigtigt at holde øje med din lokation, så du kan styre væk fra månen og ikke kommer for tæt på.</p>";
+    document.querySelector("#requirement").innerHTML = "<h3>STRÅLERNE</h3><p>Strålerne er svære at få øje på men kan somme tider have et rødt skær.</p>";
+    document.getElementById("img1").src = "img/alien.webp";
 }
-
 function headHighlight2() {
     console.log("headHighlight2");
     document.querySelector("#_hastighed_").style.fill = " #FFFFFF";
@@ -39,8 +40,11 @@ function headUnHighlight2() {
 
 function headInfo2() {
     console.log("headInfo2");
-    document.querySelector(".info-text > h2").textContent = "hastighed";
-    document.querySelector(".info-text > article > p").textContent = "hvor hurtigt flyver du?";
+    document.querySelector(".info-text > h2").textContent = "Hastighed";
+    document.querySelector(".info-text > article > p").textContent = "Hvor hurtigt flyver du?";
+    document.querySelector("#efficiency").innerHTML = "<h3>HASTIGHEDSMÅLEREN</h3><P>Måleren viser din hastighed i km/s. Den generelle måling burde ligge på 7,8, men skal under alle omstændigheder være mellem 6-9.</p>";
+    document.querySelector("#requirement").innerHTML = "<h3>DIN HASTIGHED</h3><p>7,8 m/s svarer til 28.000 km/t. Det er 23 gange hurtigere end lydens hastighed.</p>";
+    document.getElementById("img1").src = "img/hastighed.webp";
 }
 
 function headHighlight3() {
@@ -55,6 +59,9 @@ function headUnHighlight3() {
 
 function headInfo3() {
     console.log("headInfo3");
-    document.querySelector(".info-text > h2").textContent = "radar";
-    document.querySelector(".info-text > article > p").textContent = "hvor er du?";
+    document.querySelector(".info-text > h2").textContent = "Radar";
+    document.querySelector(".info-text > article > p").innerHTML = "<p>Læs nedenfor hvordan dit radar fungerer!</p>";
+    document.querySelector("#efficiency").innerHTML = "<h3>RADAR</h3><P>Dit radar viser 2 ting: <br> 1. Hvilken retning du er på vej hen <br> 2. Hvor tæt på de nærmeste asteroider og planeter er.</p>";
+    document.querySelector("#requirement").innerHTML = "<p>Derudover alarmerer dit radar dig automatisk med lysere frekvenser, jo tættere du kommer på at støde på dine omgivelser.</p>";
+    document.getElementById("img1").src = "img/radar.webp";
 }

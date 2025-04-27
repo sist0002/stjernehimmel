@@ -252,7 +252,8 @@ h2 {
   text-transform: uppercase;
 }
 p,
-legend {
+legend,
+aside {
   font-family: "rubik_light";
   line-height: 1.5em;
 }
